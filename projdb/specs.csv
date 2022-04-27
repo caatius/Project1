@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿ID;NAME;DESCRIPTION;PRICE;INFO;MISC;WEBSITE;FOREIGN KEY
 1;Pikku Panda Teahouse and Teashop;Tea and dumplings;$$;Kirkkokatu 22;;;
 2;Fantasiapelit;Tabletop games, manga and comicbooks;$$;Rautatienkatu 10;;;
@@ -11,3 +12,18 @@
 10;Levykauppa Äx;Music store;$;Hallituskatu 29 B;;;
 11;Suomalainen Kirjakauppa (Valkea);Books, arts equipment and office equipment;$$;Isokatu 24-25;;;
 12;SPR Kontti;Second Hand Shop;;Tyrnäväntie 14;;;
+=======
+﻿ID;NAME;DESCRIPTION;PRICE;INFO;MISC;WEBSITE;FOREIGN KEY
+1;Pikku Panda Teahouse and Teashop;Tea and dumplings;$$;Kirkkokatu 22;;;
+2;Fantasiapelit;Tabletop games, manga and comicbooks;$$;Rautatienkatu 10;;;
+3;Aasia Market;Large selection of Asian food items;$;Asemakatu 32;;;
+4;Chocosomnia;Candy;$$;Isokatu 28;;;
+5;Karkkipäivä (Valkea);Candy;$$;Isokatu 25;;;
+6;Turun Sarjakuvakauppa (Valve);Comicbooks;;Hallituskatu 7;;;
+7;Underground;Gothic and rockabilly clothing;$$$;Hallituskatu 29;;;
+8;Cybershop;Gothic, punk and rockclothing. LGBT-items;$$;Kauppurienkatu 13;;;
+9;Pilailupuoti;Costumes;$$;Kauppurienkatu 34;;;
+10;Levykauppa Äx;Music store;$;Hallituskatu 29 B;;;
+11;Suomalainen Kirjakauppa (Valkea);Books, arts equipment and office equipment;$$;Isokatu 24-25;;;
+12;SPR Kontti;Second Hand Shop;;Tyrnäväntie 14;;;
+>>>>>>> 550bbd906bbbd5ac418600d87a59503b3ef23b87
