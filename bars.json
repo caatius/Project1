@@ -1,0 +1,146 @@
+[
+    {
+      "id": 1,
+      "name": "Mango Discobar",
+      "description": "Nightclub",
+      "PRICE": "",
+      "info": "Saaristonkatu 16",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 2,
+      "name": "45 Special",
+      "description": "Nightclub & Restaurant",
+      "PRICE": "",
+      "info": "Saaristonkatu 12",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 3,
+      "name": "Pataässä",
+      "description": "Bar & Nightclub",
+      "PRICE": "",
+      "info": "Pakkahuoneenkatu 7",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 4,
+      "name": "Ilona",
+      "description": "Nightclub",
+      "PRICE": "",
+      "info": "Torikatu 21-23",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 5,
+      "name": "Hot Night Disco",
+      "description": "Nightclub ",
+      "PRICE": "",
+      "info": "",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 6,
+      "name": "Yöhuikka",
+      "description": "Nightclub",
+      "PRICE": "",
+      "info": "Asemakatu 20",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 7,
+      "name": "Kaarlehovi",
+      "description": "Bar & Nightclub",
+      "PRICE": "",
+      "info": "Kauppurienkatu 6",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 8,
+      "name": "Ihku",
+      "description": "Nightclub",
+      "PRICE": "",
+      "info": "Torikatu 22",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 9,
+      "name": "Teerenpeli",
+      "description": "Bar",
+      "PRICE": "",
+      "info": "Kauppurienkatu 8",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 10,
+      "name": "Snooker Time",
+      "description": "Pub & Bar",
+      "PRICE": "",
+      "info": "Asemakatu 28",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 11,
+      "name": "Letkunpuiston Helmi",
+      "description": "Pub & Bar",
+      "PRICE": "",
+      "info": "Uusikatu 23",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 12,
+      "name": "St. Michael",
+      "description": "Pub & Bar",
+      "PRICE": "",
+      "info": "Hallituskatu 13",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 13,
+      "name": "Amarillo",
+      "description": "Bar & Restaurant",
+      "PRICE": "",
+      "info": "Kirkkokatu 15",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 14,
+      "name": "Hemingway",
+      "description": "",
+      "PRICE": "",
+      "info": "Kirkkokatu 8",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 15,
+      "name": "1bar",
+      "description": "",
+      "PRICE": "",
+      "info": "Kauppurienkatu 5",
+      "misc": "",
+      "FOREIGN KEY": ""
+    },
+    {
+      "id": 16,
+      "name": "Basso",
+      "description": "Nightclub",
+      "PRICE": "",
+      "info": "Uusikatu 20",
+      "misc": "",
+      "FOREIGN KEY": ""
+    }
+   ]
