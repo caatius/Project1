@@ -21,8 +21,8 @@ function renderOneProduct(product) {
                 <span class="item-description">${product.description}</span>
                 <span class="item-misc">${product.misc}</span>
                 <span class="item-address">${product.info}</span>
-                <span class="item-price">Price:${product.price}</span>
-                <span class="item-url">${product.url}</span>
+                <span class="item-price">Price level: ${product.price}</span>
+                <a href="${product.url}" class="item-url">${product.url}</a>
                 </div>
     `
     findDiv.appendChild(newElement)        
