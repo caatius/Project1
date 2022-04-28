@@ -1,7 +1,7 @@
 // And here's code to access the JSON file and create the items for the page
 function displayResult(buttonPressed) {
     document.getElementById("content container").innerHTML = "";
-    fetch(`https://raw.githubusercontent.com/caatius/corgis/main/${buttonPressed}.json`)
+    fetch(`https://raw.githubusercontent.com/caatius/Project1/master/db/${buttonPressed}.json`)
     .then(response => response.json())
     .then(productsArray => renderAllProducts(productsArray))
 
