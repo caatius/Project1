@@ -15,9 +15,9 @@ const findDiv = document.getElementById("content container");
 function renderOneProduct(product) {
     const newElement = document.createElement("div")
     newElement.className = "content-item"
-    newElement.setAttribute("onclick", "showOnMap();"); //"onclick","showOnMap(${product.name})"
+    newElement.setAttribute("onclick", "showOnMap(this.value);"); //"onclick","showOnMap(${product.name})"
     newElement.innerHTML = `
-                <span class="item-name">${product.name}</span>
+                <span data-value="${product.lat},${product.lng}" class="item-name">${product.name}</span>
                 <span class="item-description">${product.description}</span>
                 <span class="item-misc">${product.misc}</span>
                 <span class="item-address">${product.info}</span>
@@ -29,14 +29,31 @@ function renderOneProduct(product) {
 }}
 
 const findMap = document.getElementById("googleMap");
+const findPosition = document.getElementById("item-name");
 
-function showOnMap(product) {
+function showOnMap() {
+
+    var mapProp= {
+        center:new google.maps.LatLng(65.0124,25.4682),
+        zoom: 15,
+        styles: [
+      {
+        "featureType": "poi",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      }
+    ]
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
 
     const mapMarker =  new google.maps.Marker({ 
-        position: {lat:`${product.lat}`, lng:`${product.lng}`},
-        map:map,
-        title: `${product.name}`,    
+        position: ,
+        map: map,
+        title: "Here! ^_^",    
         })
-    
-    findMap.appendChild(mapMarker)
+        window.showOnMap = showOnMap;
+   // findMap.appendChild(mapMarker)
 }
