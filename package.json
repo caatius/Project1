@@ -4,10 +4,7 @@
   "description": "Group2 project",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.3",
-    "pg": "^8.7.3",
-    "prompts": "^2.4.2",
-    "yargs": "^17.2.1"
+    "express": "^4.17.3"
   },
   "engines": {
     "node": "17.x"
