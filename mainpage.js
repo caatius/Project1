@@ -15,9 +15,9 @@ const findDiv = document.getElementById("content container");
 function renderOneProduct(product) {
     const newElement = document.createElement("div")
     newElement.className = "content-item"
-    newElement.setAttribute("onclick", "showOnMap(this.value);"); //"onclick","showOnMap(${product.name})"
+    newElement.setAttribute("onclick", "showOnMap();"); //"onclick","showOnMap(${product.name})"
     newElement.innerHTML = `
-                <span data-value="${product.lat},${product.lng}" class="item-name">${product.name}</span>
+                <span id="${product.name}", class="item-name", data-value="{lat:${product.lat}, lng:${product.lng}}">${product.name}</span>
                 <span class="item-description">${product.description}</span>
                 <span class="item-misc">${product.misc}</span>
                 <span class="item-address">${product.info}</span>
@@ -25,16 +25,19 @@ function renderOneProduct(product) {
                 <a href="${product.url}" class="item-url">${product.url}</a>
                 </div>
     `
-    findDiv.appendChild(newElement)        
+    findDiv.appendChild(newElement)   
 }}
 
 const findMap = document.getElementById("googleMap");
-const findPosition = document.getElementById("item-name");
+const mapCoords = this.document.getElementById("item-name");
+function setCoord() {
+  this.document.dataset.value = coords;
+}
 
 function showOnMap() {
-
+setCoords();
     var mapProp= {
-        center:new google.maps.LatLng(65.0124,25.4682),
+        center: new google.maps.LatLng(65.0124,25.4682),
         zoom: 15,
         styles: [
       {
@@ -49,11 +52,12 @@ function showOnMap() {
 
 
 
-    const mapMarker =  new google.maps.Marker({ 
-        position: ,
+      new google.maps.Marker({ 
+        position: coords,
         map: map,
         title: "Here! ^_^",    
         })
-        window.showOnMap = showOnMap;
-   // findMap.appendChild(mapMarker)
-}
+
+     // window.mapMarker; = mapMarker;
+    //findMap.appendChild(mapMarker)
+};

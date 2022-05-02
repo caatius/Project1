@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mainpage</title>
-    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
     <script defer src="mainpage.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -26,6 +25,7 @@
             <button value="parks", onclick="displayResult(this.value)">Parks, hangouts & culture</button>
             <button value="hypes", onclick="displayResult(this.value)">Hypermarkets</button>
             <button value="admis", onclick="displayResult(this.value)">Administration</button>
+        
         </nav>
         <main>
             <h2>Welcome to Oulu!</h2>
@@ -50,15 +50,14 @@
 
 <script>
     function myMap() {
-        
-
-            var mapProp = {
-            center:new google.maps.LatLng(65.0124,25.4682),
-            zoom: 15,
-            };
-
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var mapProp= {
+    center:new google.maps.LatLng(65.0124,25.4682),
+    zoom: 15,
+    mapss: google.maps.MapTypeId.HYBRID
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
+
 </script>
 
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwoCMigBjxRPXN54D5yzbQli5zThdxnj4&callback=myMap"></script>
