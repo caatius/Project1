@@ -4,19 +4,15 @@ app.get("/", (req, res, next) => {
     res.json(["Banana", "Apple",
     "Kiwi"]);
 });
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
 
 app.get('/db', async (req, res) => {
     const { Pool } = require('pg');
     const pool = (() => {
     return new Pool({
     connectionString: process.env.DATABASE_URL,
-    ssl: {
-    rejectUnauthorized: false
-    }
+        ssl: {
+            rejectUnauthorized: false
+            }
     });
     })();
     try {
@@ -30,3 +26,8 @@ app.get('/db', async (req, res) => {
     res.json({ error: err });
     }
 })
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
