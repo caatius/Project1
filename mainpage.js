@@ -15,9 +15,10 @@ const findDiv = document.getElementById("content container");
 function renderOneProduct(product) {
     const newElement = document.createElement("div")
     newElement.className = "content-item"
-    newElement.setAttribute("onclick", "showOnMap();"); //"onclick","showOnMap(${product.name})"
+    newElement.setAttribute("onclick", "setCoord();");
+   // newElement.setAttribute("onclick", "showOnMap();"); //"onclick","showOnMap(${product.name})"
     newElement.innerHTML = `
-                <span id="${product.name}", class="item-name", data-value="{lat:${product.lat}, lng:${product.lng}}">${product.name}</span>
+                <span id="${product.name}", class="item-name", data-coordinates="{lat:${product.lat}, lng:${product.lng}}">${product.name}</span>
                 <span class="item-description">${product.description}</span>
                 <span class="item-misc">${product.misc}</span>
                 <span class="item-address">${product.info}</span>
@@ -28,36 +29,42 @@ function renderOneProduct(product) {
     findDiv.appendChild(newElement)   
 }}
 
+let coords = "";
 const findMap = document.getElementById("googleMap");
 const mapCoords = this.document.getElementById("item-name");
-function setCoord() {
-  this.document.dataset.value = coords;
-}
 
 function showOnMap() {
-setCoords();
-    var mapProp= {
-        center: new google.maps.LatLng(65.0124,25.4682),
-        zoom: 15,
-        styles: [
-      {
-        "featureType": "poi",
-        "stylers": [
-          { "visibility": "off" }
-        ]
-      }
-    ]
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var mapProp= {
+      center: new google.maps.LatLng(65.0124,25.4682),
+      zoom: 15,
+      styles: [
+    {
+      "featureType": "poi",
+      "stylers": [
+        { "visibility": "off" }
+      ]
+    }
+  ]
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 
 
-      new google.maps.Marker({ 
-        position: coords,
-        map: map,
-        title: "Here! ^_^",    
-        })
+    var mapMarker = new google.maps.Marker({ 
+      position: coords,
+      map: map,
+      title: "Here! ^_^",    
+      })
 
-     // window.mapMarker; = mapMarker;
-    //findMap.appendChild(mapMarker)
+   // window.mapMarker; = mapMarker;
+  //findMap.appendChild(mapMarker)
+}
+
+function setCoord(e) {
+ let coords = e.dataset.coordinates;
+
+ 
+  showOnMap();
 };
+

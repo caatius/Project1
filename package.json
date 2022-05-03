@@ -4,6 +4,7 @@
   "description": "Group2 project",
   "main": "server.js",
   "dependencies": {
+    "@types/jquery": "^3.5.14",
     "express": "^4.17.3",
     "pg": "^8.7.3"
   },
